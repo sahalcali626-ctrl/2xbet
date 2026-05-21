@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubaxyo Cas</title>
+    <!-- Soo dhex galka farta qurxoon ee Dancing Script -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --midabka-cas: #e63946;
+            --midabka-background: #fff5f5;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--midabka-background);
+            overflow: hidden;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .Flores_Rojas {
+            position: absolute;
+            width: 85%;
+            max-width: 450px;
+            padding: 40px 20px;
+            text-align: center;
+            
+            /* Midabka iyo Farta */
+            color: var(--midabka-cas);
+            font-size: 2.5rem;
+            background: white;
+            
+            /* Qurxinta geesaha */
+            border: 3px solid var(--midabka-cas);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(230, 57, 70, 0.2);
+
+            /* Animation */
+            animation: soo-bax 2s ease-out, garaac 1.5s infinite alternate;
+            cursor: pointer;
+        }
+
+        /* Animation 1: Soo bixitaanka hore */
+        @keyframes soo-bax {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Animation 2: Garaaca (Pulse) */
+        @keyframes garaac {
+            from {
+                transform: scale(1);
+                box-shadow: 0 10px 30px rgba(230, 57, 70, 0.2);
+            }
+            to {
+                transform: scale(1.05);
+                box-shadow: 0 15px 40px rgba(230, 57, 70, 0.4);
+            }
+        }
+
+        /* Qurxin dheeraad ah: Ubaxyo yaryar oo agagaarka ah */
+        .ubax {
+            position: absolute;
+            font-size: 1.5rem;
+            color: var(--midabka-cas);
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Qoraalka dhexda ka garaacaya (Pulse) -->
+    <div class="Flores_Rojas">
+        🌹 Ubaxyo Cas Oo Adiga Kugu Haboon 🌹
+    </div>
+
+    <!-- Ubaxyo yaryar oo qurxin ah oo screen-ka lagu firdhiyey -->
+    <div class="ubax" style="top: 15%; left: 15%;">🌹</div>
+    <div class="ubax" style="top: 20%; right: 20%;">🌹</div>
+    <div class="ubax" style="bottom: 25%; left: 20%;">🌹</div>
+    <div class="ubax" style="bottom: 15%; right: 15%;">🌹</div>
+
+</body>
+</html>
 
